@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>opertaor</title>
+  </head>
+  <body>
+    <script>
+
+      // arthmatic operater
+      function arth(num1, num2) {
+        console.log(num1 + num2); //add
+        console.log(num1 / num2); //div
+        console.log(num1 * num2); //multi
+        console.log(num1 % num2); //modul
+
+        let k = 22;
+        console.log(k);
+        console.log(++k);
+        console.log(k++);
+        console.log(k);
+
+        console.log(--k);
+        console.log(k--);
+        console.log(k);
+
+        if (num1 > num2) {
+          console.log(num1 - num2);
+          return "num1 is less than num2";
+        } else {
+          console.log(num2 - num1);
+        }
+    }
+    arth(12, 10);
+
+      //Assignment opertors
+      let a = 57;
+      let b = 46;
+      console.log(`${a} + ${b} = ${(a += b)}`);
+      console.log(`${a} - ${b} = ${(a -= b)}`);
+      console.log(`${a} * ${b} = ${(a *= b)}`);
+      console.log(`${a} / ${b} = ${(a /= b)}`);
+      console.log(`${a} % ${b} = ${(a %= b)}`);
+      console.log(`${a} ** ${b} = ${(a **= b)}`);
+
+      //comparison opertors
+      let x = 20;
+      let y = 21;
+      let z = 22;
+      console.log(x == y); //false
+      console.log(x <= y); //true
+      console.log(x >= y); //false
+      console.log(x != y); //true
+
+      //logical operators
+      if (x < y && x > z) {
+        // all condition true
+        console.log("2 condition satis....");
+      } else {
+        console.log("2 condition != satis....");
+      }
+
+      if (x < y || x > z) {
+        // any one condition true
+        console.log("2 condition satis....");
+      } else {
+        console.log("2 condition != satis....");
+      }
+
+      console.log(x != y ? "x not equal to y" : "x and y is equal"); //ternary opert..
+      
+    </script>
+  </body>
+</html>
