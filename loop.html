@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loops statement</title>
+  </head>
+  <body>
+    <script>
+      // 5 table help with for loop
+      for (let i = 1; i <= 10; i++) {
+        document.write(`5 * ${i} = ${5 * i} </br>`);
+      }
+
+      // if ,else ,else if
+      document.write(`if, else if ,else</br>`);
+      for (let i = 2; i <= 5; i++) {
+        if (i % 2 == 0) {
+          document.write(`${i} is divison by 2 </br>`);
+        } else if (i % 3 == 0) {
+          document.write(`${i} is divison by 3 </br>`);
+        } else {
+          document.write(`${i} is divison by 5 </br>`);
+        }
+      }
+
+      // continue && break
+      document.write(`continue && break </br> `);
+      for (let num = 2; num <= 10; num++) {
+        if (num % 2 == 0) {
+          document.write(`${num}</br>`);
+          continue;
+        } else if (num % 5 == 0) {
+          break;
+        }
+      }
+
+      //do && while
+      document.write(`do && while loop </br>`);
+      let s = 10;
+      do {
+        document.write(s + "</br>");
+        s--;
+      } while (s >= 1);
+
+      //switch statement
+      document.write(`do && while loop </br>`);
+      switch (5) {
+        case 1:
+          document.write("Monday");
+          break;
+        case 2:
+          document.write("Tuseday");
+          break;
+        case 3:
+          document.write("Wednesday");
+          break;
+        case 4:
+          document.write("Thursday");
+          break;
+        case 5:
+          document.write("Friday");
+          break;
+        case 6:
+          document.write("Saturday");
+          break;
+        default:
+          document.write("Sunday");
+      }
+    </script>
+  </body>
+</html>
