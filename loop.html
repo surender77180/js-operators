@@ -12,8 +12,25 @@
         document.write(`5 * ${i} = ${5 * i} </br>`);
       }
 
+      document.write(`====== for of loop =======</br>`);
+      let vowe = ['a','e','i','o','u'];
+      for (let w in vowe) {
+        document.write(` ${w} </br>`);
+      }
+
+      document.write(`====== for of loop =======</br>`);
+      let vowel = ['a','e','i','o','u'];
+      for (let w of vowel) {
+        document.write(` ${w} </br>`);
+      }
+
+      document.write(`====== for each loop =======</br>`);
+      vowel.forEach(data => {
+        document.write(`${data} </br>`);
+      });
+
       // if ,else ,else if
-      document.write(`if, else if ,else</br>`);
+      document.write(`====== if, else if ,else =======</br>`);
       for (let i = 2; i <= 5; i++) {
         if (i % 2 == 0) {
           document.write(`${i} is divison by 2 </br>`);
@@ -25,7 +42,7 @@
       }
 
       // continue && break
-      document.write(`continue && break </br> `);
+      document.write(`====== continue && break ======</br> `);
       for (let num = 2; num <= 10; num++) {
         if (num % 2 == 0) {
           document.write(`${num}</br>`);
@@ -36,7 +53,7 @@
       }
 
       //do && while
-      document.write(`do && while loop </br>`);
+      document.write(`====== do && while loop ======</br>`);
       let s = 10;
       do {
         document.write(s + "</br>");
@@ -44,7 +61,7 @@
       } while (s >= 1);
 
       //switch statement
-      document.write(`do && while loop </br>`);
+      document.write(`====== do && while loop ======</br>`);
       switch (5) {
         case 1:
           document.write("Monday");

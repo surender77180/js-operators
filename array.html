@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array method</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["Apple", "Orange", "Pear", "Banana", "Watermelon"];
+
+      document.write("====== length of fruits =======</br>");
+      document.write(`fruits length == ${fruits.length}; </br></br>`);
+
+      document.write("====== push the fruit =======</br>");
+      document.write(`new fruit add == ${fruits.push("melon")}; </br></br>`); //last index add
+
+      document.write("====== pop the fruit =======</br>");
+      document.write(`remove fruit == ${fruits.pop()}; </br>`); //last index remove
+      document.write(`fruits length == ${fruits.length}; </br></br>`);
+
+      document.write("====== shift the fruit =======</br>");
+      document.write(`fruit remove in front ${fruits.shift()}; </br>`);
+      document.write(`fruits length == ${fruits.length}; </br></br>`);
+
+      document.write("====== unshift the fruit =======</br>");
+      document.write(`fruit add in front ${fruits.unshift('Grapes')}; </br></br>`);
+
+      document.write("====== splice the fruit =======</br>");
+      document.write(`fruit remove  ${fruits.splice(2,1)}; </br></br>`);
+      document.write(`fruit add  ${fruits.splice(2, 0, 'Mango')}; </br></br>`);
+      
+      document.write("====== at the fruit =======</br>");
+      document.write(`fruit at ${fruits.at(2)}; </br></br>`);
+
+      document.write("====== concat the array =======</br>");
+      let a = ['a','b','c'];
+      let b = [1,2,3,4];
+      let c = [1.2,2.3];
+      document.write(`concat a&b ${b.concat(a,c)}; </br></br>`);
+
+      document.write("====== copywithin the array d =======</br>");
+      let d = [24,27,3,6,9,12,15,18,21];
+      document.write(`copy the element ${d.copyWithin(2,0,5)}; </br></br>`) //2 is copy of index0,1 value & 0 is starting no copy & 5 is end of index value delete
+
+      document.write("====== entries the fruit =======</br>");
+      let vowel = ['a','e','i','o','u'];
+      for(let j of vowel.entries()){
+        document.write(j +'</br>');
+      };
+
+      document.write("====== fill() =======</br>");
+      let ages = [21,22,23,24];
+      document.write(ages.fill(30,1,2) +'</br></br>');//30 is set the value, 1 start index 2 end index.
+
+      document.write("====== flat() =======</br>");
+      let nesarr = [21 ,22 ,[1 ,2 ,3] ,23 ,['a' ,'b' ,'c'] ,24];
+      document.write(`${nesarr.flat(1)}; </br></br>`);
+
+      document.write("====== reverse() =======</br>");
+      let count = [1,2,3,4,5,6,7,8,9,10];
+      document.write(`${count} reverse = ${count.reverse()}; </br></br>`);
+
+      document.write("====== for in loop =======</br>");
+      for (fruit in fruits) {
+        document.write(fruits[fruit] + "</br>");
+      }
+    </script>
+  </body>
+</html>
