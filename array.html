@@ -25,10 +25,15 @@
 
       document.write("====== unshift the fruit =======</br>");
       document.write(`fruit add in front ${fruits.unshift('Grapes')}; </br></br>`);
-
+      
       document.write("====== splice the fruit =======</br>");
       document.write(`fruit remove  ${fruits.splice(2,1)}; </br></br>`);
       document.write(`fruit add  ${fruits.splice(2, 0, 'Mango')}; </br></br>`);
+      
+      document.write("====== for in loop =======</br>");
+      for (fruit in fruits) {
+        document.write(fruits[fruit] + "</br>");
+      }
       
       document.write("====== at the fruit =======</br>");
       document.write(`fruit at ${fruits.at(2)}; </br></br>`);
@@ -58,13 +63,22 @@
       document.write(`${nesarr.flat(1)}; </br></br>`);
 
       document.write("====== reverse() =======</br>");
-      let count = [1,2,3,4,5,6,7,8,9,10];
+      let count = [1,2,3,4,5,6,7,8,4,9,10];
       document.write(`${count} reverse = ${count.reverse()}; </br></br>`);
 
-      document.write("====== for in loop =======</br>");
-      for (fruit in fruits) {
-        document.write(fruits[fruit] + "</br>");
-      }
+      document.write("====== indexof() =======</br>");
+      document.write(`${count} indexof 4 = ${count.indexOf(4)}; </br></br>`);
+
+      document.write("====== lastindexof() =======</br>");
+      document.write(`${count} lastindexof 4 = ${count.lastIndexOf(4)}; </br></br>`);
+
+      document.write("====== include() =======</br>");
+      document.write(`${count} includeof 7 = ${count.includes(7)}; </br>`);
+      document.write(`${count} includeof 20 = ${count.includes(20)}; </br></br>`);
+
+      document.write("====== join() =======</br>");
+      document.write(`${count} join :: 20 = ${count.join('::')}; </br></br>`);
+
     </script>
   </body>
 </html>
