@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>function</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
 
-        // simple function create
-        function sum(a,b){
-            return a+b;
-        }
+              // simple function create
+              function sum(a,b){
+                  return a+b;
+              }
 
-        let result = sum(10,10);
-        document.write(`sum of a+b = ${result}; </br>`);
+              let result = sum(10,10);
+              document.write(`sum of a+b = ${result}; </br>`);
 
-        //Asynchronous function
-        let sub = function(a,b){
-            return a-b;
-        }
+              //Asynchronous function
+              let sub = function(a,b){
+                  return a-b;
+              }
 
-        let cheker = sub(20,10);
-        document.write(`sub of a-b = ${cheker}; </br>`);
+              let cheker = sub(20,10);
+              document.write(`sub of a-b = ${cheker}; </br>`);
 
-        // rest parmeters in function
-        let mul = function(a,b,...c){
-            document.write(`mul of a*b = ${a*b}; </br>`);
-            return c;
-        }
-        let showResult = mul(2,3,4,5,6);
-        document.write(`c is rest parmeter = ${showResult}; </br>`);
+              // rest parmeters in function
+              let mul = function(a,b,...c){
+                  document.write(`mul of a*b = ${a*b}; </br>`);
+                  return c;
+              }
+              let showResult = mul(2,3,4,5,6);
+              document.write(`c is rest parmeter = ${showResult}; </br>`);
 
-        // arrow function
-        let div = (a,b)=>{
-            return a/b;
-        }
-        let divC = div(10,5);
-        document.write(`a divide by b = ${divC}; </br>`);
+              // arrow function
+              let div = (a,b)=>{
+                  return a/b;
+              }
+              let divC = div(10,5);
+              document.write(`a divide by b = ${divC}; </br>`);
 
+              //default parameter
+              let mod = (a=3,b)=>{
+                  return a%b;
+              }
+              let modC = mod(2);
+              document.write(`moduls = ${modC}; </br>`);
+
+            //   axios.get(http://universities.hipolabs.com/search?country=india&limit=1)
+      
+            //   .then((x)=>{console.log(x.data[0])}))
     </script>
-</body>
+  </body>
 </html>

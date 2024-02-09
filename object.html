@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object</title>
+</head>
+<body>
+    <script>
+        // filtering the data
+        let age = [22,14,24,27,42,16];
+        let store = age.filter(function(value){
+            return value>22;
+        })
+        document.write(`filter ${store}; </br>`);
+
+        //find the data
+        let find = age.find(function(data){
+            return data == 27;
+        })
+        document.write(`find ${find}; </br>`);
+
+    </script>
+</body>
+</html>
