@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+
+        // simple function create
+        function sum(a,b){
+            return a+b;
+        }
+
+        let result = sum(10,10);
+        document.write(`sum of a+b = ${result}; </br>`);
+
+        //Asynchronous function
+        let sub = function(a,b){
+            return a-b;
+        }
+
+        let cheker = sub(20,10);
+        document.write(`sub of a-b = ${cheker}; </br>`);
+
+        // rest parmeters in function
+        let mul = function(a,b,...c){
+            return a*b;
+        }
+        let showResult = mul(2,3,4,5,6);
+        document.write(`mul of a*b = ${showResult}; </br>`);
+
+    </script>
+</body>
+</html>
