@@ -26,10 +26,18 @@
 
         // rest parmeters in function
         let mul = function(a,b,...c){
-            return a*b;
+            document.write(`mul of a*b = ${a*b}; </br>`);
+            return c;
         }
         let showResult = mul(2,3,4,5,6);
-        document.write(`mul of a*b = ${showResult}; </br>`);
+        document.write(`c is rest parmeter = ${showResult}; </br>`);
+
+        // arrow function
+        let div = (a,b)=>{
+            return a/b;
+        }
+        let divC = div(10,5);
+        document.write(`a divide by b = ${divC}; </br>`);
 
     </script>
 </body>
